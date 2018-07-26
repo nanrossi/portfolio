@@ -1,0 +1,10 @@
+body {
+  color: #fff;
+  font-family: 'Raleway';
+  text-align: center;
+  margin: 0px;
+  font-size: 8pt;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
