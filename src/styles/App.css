@@ -62,6 +62,13 @@
   background: #444649;
 }
 
+.header-bar-skills {
+  margin: 25px 0 35px 0;
+  width: 70px;
+  height: 4px;
+  background: #444649;
+}
+
 .highlight {
   color: #12cfff;
 }
@@ -93,11 +100,11 @@ section #gallery .mix .button:hover {
   color: #fff;
 }
 
-#home .button:hover svg {
+#home .button:hover .arrow-icon {
   transform: rotate(90deg);
 }
 
-svg {
+.arrow-icon {
   transition: transform .3s;
   display: inline-flex;
   align-self: center;
@@ -151,10 +158,25 @@ section #gallery .mix{
   background: #252934;
   height: 300px;
   width: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; 
+}
+
+section #gallery .sportv{
+  background-image: url('../img/4K.png');
+}
+
+section #gallery .kestraa{
+  background-image: url('../img/kestraa.png');
+}
+
+section #gallery .grade{
+  background-image: url('../img/globo.png');
 }
 
 section #gallery .mix:hover .card {
-  opacity: 0.9;
+  opacity: 0.92;
 }
 
 section #gallery .mix:hover .text,
@@ -184,8 +206,13 @@ section #gallery .mix .button {
 
 section #gallery .mix .text {
    padding: 60px 0 25px 0;
-   font-size: 24pt;
-   line-height: 24pt;
+   font-size: 18pt;
+   line-height: 18pt;
+}
+
+section #gallery .mix .text .highlight {
+  display: block;
+  padding-top: 10px;
 }
 
 section #gallery .mix .button {
@@ -270,4 +297,10 @@ footer .footnote {
   font-size: 10pt;
   color: #8F9AA7;
   opacity: 0.6;
+}
+
+.icon-box {
+   background-color: #444649;
+   margin: 50px;
+   padding: 20px;
 }

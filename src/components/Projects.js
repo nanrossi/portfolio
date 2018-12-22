@@ -1,5 +1,24 @@
 import React, { Component } from 'react';
 
+const projects = [
+  {
+    id: 'kestraa',
+    name: 'Kestraa',
+    technology: 'Java (Spring) + React JS',
+  },
+  {
+    id: 'sportv',
+    name: 'SporTV 4K na Rússia',
+    technology: 'React JS',
+  },
+  {
+    id: 'grade',
+    name: 'Grade de Programação',
+    technology: 'Node.js',
+  }
+];
+
+
 class Projects extends Component {
   render() {
     return (
@@ -9,40 +28,23 @@ class Projects extends Component {
             <div className="header-bar"></div>
 
             <div id="gallery" className="container flex row wrap animated">
-
-              <div className="mix js">
-                <div>
-                  <div className="card" />
-                  <div className="text">
-                    <div className="bold">Roambi</div>
-                    <span className="highlight">Pure JavaScript</span>
-                  </div>
-                  <div className="button" id="roambi">LEARN MORE</div>
-                </div>
-              </div>
-
-              <div className="mix js">
-                <div>
-                  <div className="card" />
-                  <div className="text">
-                    <div className="bold">Roambi</div>
-                    <span className="highlight">Pure JavaScript</span>
-                  </div>
-                  <div className="button" id="roambi">LEARN MORE</div>
-                </div>
-              </div>
-
-              <div className="mix js">
-                <div>
-                  <div className="card" />
-                  <div className="text">
-                    <div className="bold">Roambi</div>
-                    <span className="highlight">Pure JavaScript</span>
-                  </div>
-                  <div className="button" id="roambi">LEARN MORE</div>
-                </div>
-              </div>
-              
+              {
+                projects.map(project => {
+                  const cardStyle = `mix js ${project.id}`
+                  return (
+                    <div className={cardStyle}>
+                      <div>
+                        <div className="card" />
+                        <div className="text">
+                          <div className="bold">{project.name}</div>
+                          <span className="highlight">{project.technology}</span>
+                        </div>
+                        <div className="button" id={project.id}>LEARN MORE</div>
+                      </div>
+                    </div>
+                    )
+                  })
+              }
             </div>
 
         </div>

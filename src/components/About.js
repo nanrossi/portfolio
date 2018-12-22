@@ -27,7 +27,7 @@ class About extends Component {
 
                 <div className="flex flex-50-gt-sm">
                     <div className="description">
-                        I'm a Full-stack Developer for <a className="highlight" href="https://www.dextra.com.br/">Dextra</a>.
+                        I'm a Full-stack Developer for <a className="highlight" href="http://www.dextra.com.br/">Dextra</a>.
                         <br />
                         I have serious passion for programming, technology and making things that make a difference in the world.
                         <br />

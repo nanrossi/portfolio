@@ -5,7 +5,7 @@ const icons = {
 };
 
 const Icon = props => (
-<svg width="16" height="16" viewBox="0 0 16 16">
+<svg className="arrow-icon" width="16" height="16" viewBox="0 0 16 16">
     <path fill="#FFF" d={icons[props.icon]}></path>
 </svg>
 );

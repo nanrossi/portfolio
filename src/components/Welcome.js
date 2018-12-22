@@ -28,7 +28,7 @@ class Welcome extends Component {
 				<br />
 				I'm a full-stack web developer.
 				</div>
-				<div className="button" onClick={this.buttonClick.bind(this)}>View my work <Icon icon='arrow-right'/></div>
+				<div className="button" onClick={this.buttonClick.bind(this)}>View my work <Icon className="arrow-icon" icon='arrow-right'/></div>
 
 				<Header />
 			</div>
